@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+
+        }
+        .container
+        {
+            width:100vw;
+            height:100vh;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .card{
+            height: 600px;
+            width: 400px;
+            background-color: white;
+            border-radius: 20px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        
+            
+        }
+        .card img{
+            height: 35%;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            
+        }
+        .box{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            width: 80%;
+            text-align: center;
+        }
+       #amtbox{
+        width: 80%;
+        height: 10%;
+        background-color: lightblue;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 20px;
+        padding-left: 20px;
+       }
+       .leftbox{
+        width: fit-content;
+        display: flex;
+        gap: 15px;
+       }
+       .rightbox{
+        width: fit-content;
+       }
+       #paymentbutton{
+        width: 80%;
+        height: 9%;
+    background-color: darkblue; 
+    border-radius: 10px;  
+    color: white;
+    box-shadow: 4px 5px 20px 5px darkblue;
+    }
+    .cancel{
+        width: 50%;
+        text-align: center;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    .imagbox{
+        height: 34%;
+        width: 40px;
+        padding :5px;
+    }
+    @media (max-width:400px) {
+        .amtbox{
+            display: flex;
+            flex-direction:column;
+            flex-wrap: wrap;
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="card">
+         <img src="order.jpg" alt="qr">
+         <div class="box">
+         <h2>Order Summary</h2>
+    
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quas neque quam temporibus necessitatibus iste error impedit doloribus, asperiores quis?</p>
+        </div>
+        <div id="amtbox">
+
+            <div class="leftbox">
+
+            <div class="imagbox">
+            <img src="secure.png" alt="logo">
+        </div>
+
+        <div id="textamtbox">
+            <p>AMOUNT</p>
+            <P>$99.9/year</P>
+        </div>
+            </div>
+        <div class="rightbox">
+            <a href="#">Change</a>
+        </div>
+        </div>
+
+ <button id ="paymentbutton">Proceed to checkout</button>
+        <div class="cancel">
+            <a href="#">Cancel Order</a>
+        </div>
+     </div>
+    </div>
+</body>
+</html>
